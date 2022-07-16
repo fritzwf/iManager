@@ -1,0 +1,19 @@
+ID UMABBREVIATION UNITMEASUREDESCRIPTION UNITMEASURENAME   DESCRIPTION
+-- -------------- ---------------------- ---------------   -----------
+16 ea             Count.                 Each               Sold per each.
+17 bx             Count.                 Box             
+18 cs             Count.                 Case            
+19 dz             Count.                 Dozen           
+20 in             Length.                Inch            
+21 ft             Length.                Foot               Sold by the foot.
+22 yd             Length.                Yard            
+23 m              Length.                Meter           
+24 oz             Weight.                Ounce           
+25 lb             Weight.                Pound              Sold by the pound.
+26 kg             Weight.                Kilogram        
+27 qt             Volume.                Quart           
+28 gl             Volume.                Gallon             Sold by the gallon.
+29 L              Volume.                Liter           
+30 sf             Area.                  Square Feet     
+31 ac             Area.                  Acre            
+32 sm             Area.                  Square Meter    

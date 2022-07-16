@@ -1,0 +1,5 @@
+<configuration>
+
+    <include resource="${logback.include.file}"/>
+  
+</configuration>

@@ -1,0 +1,32 @@
+Company
+-----------------------------------------------
+Southwind Traders
+123 East Elm Street
+Southberg NA, 12345
+USA
+Phone: 407-646-3131
+
+Support
+support@feuersoft.com
+
+Stores
+-----------------------------------------------
+Store One
+1107 W. Church Street
+Orlando, FL 32805
+
+
+Store Two
+1106 W. Pine Street
+Orlando, FL 32805
+
+Manager name: Support
+Manager Email: support@feuersoft.com
+
+Customer
+-----------------------------------------------
+Southwind Parts
+1131 Cranes Roost Dr.
+Altamonte Springs, FL 32701
+
+See acdelco_vendor_info.txt for information on product lines.

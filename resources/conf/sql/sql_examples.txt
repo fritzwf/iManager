@@ -1,0 +1,30 @@
+select s.item_id,  i.id, p.lineCode
+FROM storequantity s, item i,  productline p 
+where s.item_id = i.id AND p.lineCode = 'D05'
+
+select * FROM item_storequantity
+
+SELECT * FROM purchaseorder_purchaseorderitem
+
+UPDATE storequantity set neworder = 0
+
+select * FROM storequantity where neworder > 0
+
+UPDATE storequantity
+SET reorderlevel = 0
+select s.item_id,  i.id, p.lineCode
+FROM storequantity s, item i,  productline p 
+where s.item_id = i.id AND p.lineCode = 'D05'
+
+select s.item_id,  i.id, p.lineCode
+FROM storequantity s, item i,  productline p 
+where s.item_id = i.id AND p.lineCode = 'A41' AND s.reorderLevel > s.qtyOnOrder
+
+select s.item_id,  i.id, p.lineCode
+FROM storequantity s, item i,  productline p 
+where s.item_id = i.id AND p.lineCode = 'A41' AND s.reorderLevel > (s.qoh + s.qtyOnOrder + s.newOrder)
+
+select * FROM item i
+join storequantity sq on sq.item_id = i.id
+join item_storequantity isq on isq.stores_id = 4
+where sq.reorderLevel > (sq.qoh + sq.qtyOnOrder + sq.newOrder) AND i.productline_id = 10

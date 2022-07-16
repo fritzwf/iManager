@@ -1,0 +1,63 @@
+(This file contains Copyright and License information)
+
+The iManager application
+------------------------
+This version of The iManager application ('the Software', or 'iManager application') is not public domain or free
+software, but is distributed as 'shareware' for EVALUATION PURPOSES ONLY. Your use of this Software indicates your
+agreement to the terms and conditions of this License.
+
+COPYRIGHT AND PROPRIETARY RIGHTS
+--------------------------------
+The iManager application software is owned by Fritz Feuerbacher and is protected by United States copyright laws and
+international treaty provisions.  The iManager application software contains valuable trade secrets proprietary to Fritz 
+Feuerbacher.  You may not disassemble, decompile, reverse engineer, or create any derivative works of the software for
+any purpose other than making an adaptation to the software as a normal step in configuring it for your own personal use.
+
+LICENSE AND RESTRICTIONS
+------------------------
+Fritz Feuerbacher grants individuals a limited license to use this shareware software for a 30-day period on a private, non-commercial
+basis, in order to decide whether or not the iManager application suits their needs. At the end of the 30-day evaluation period, the 
+individual MUST either purchase a fully licensed copy of this software, or discontinue using the iManager application.
+
+Purchasing a license for the iManager application enables you to use the Software on any computer, with only one copy of the iManager
+application running per license purchased.  If more than one copy of the iManager application desired to run you must purchase additional
+licenses equal to the number of the iManager application instances you want to run.
+
+Individuals are granted a limited license to copy the shareware version of the iManager application for the sole purpose of allowing
+others to try it, subject to the above as well as the following restrictions:
+
+- The Software must be distributed without alteration in its entirety,
+  including all file names, program code, documentation, and any related
+  files. No other programs or files may be included.
+
+- The Software may not be distributed in combination with any other
+  software or hardware product as an enticement or for any other reason,
+  without special permission from Fritz Feuerbacher.
+
+- No fee or payment may be charged or accepted for the Software.
+
+- You may not make general use of this shareware Software within a
+  company, institution, or agency without purchasing a license in agreement with
+  the license terms described above.
+
+WARRANTY DISCLAIMER
+-------------------
+Copyright (C) 2018 Fritz Feuerbacher All Rights Reserved.
+
+Redistribution and use without modification, are permitted 
+provided that the following conditions are met:
+Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY FRITZ FEUERBACHER ``AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL FRITZ FEUERBACHER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

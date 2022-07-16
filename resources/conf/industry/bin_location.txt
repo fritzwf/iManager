@@ -1,0 +1,8 @@
+Example of a two story warehouse: http://www.datalinx.co.uk/blog/how-to-name-and-label-warehouse-bins-and-shelves
+------------------------------------------------------
+
+W1-A-01-A     W1-A-01-B     W1-A-01-C     W1-A-01-D
+
+W1-A-02-A     W1-A-02-B     W1-A-02-C     W1-A-02-D
+
+W1-A-03-A     W1-A-03-B     W1-A-03-C     W1-A-04-D

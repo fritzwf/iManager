@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+  
+  <persistence-unit name="imanager-HSQL" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <!-- <jar-file>dist/iManager.jar</jar-file> -->
+    <class>com.feuersoft.imanager.persistence.Associate</class>
+    <class>com.feuersoft.imanager.persistence.BinLocation</class>
+    <class>com.feuersoft.imanager.persistence.Company</class>
+    <class>com.feuersoft.imanager.persistence.Customer</class>
+    <class>com.feuersoft.imanager.persistence.InetProxy</class>
+    <class>com.feuersoft.imanager.persistence.Invoice</class>
+    <class>com.feuersoft.imanager.persistence.InvoiceNumber</class>
+    <class>com.feuersoft.imanager.persistence.Item</class>
+    <class>com.feuersoft.imanager.persistence.ItemLotNumber</class>
+    <class>com.feuersoft.imanager.persistence.ItemMetadata</class>
+    <class>com.feuersoft.imanager.persistence.ItemSerialNumber</class>
+    <class>com.feuersoft.imanager.persistence.MarketSegment</class>
+    <class>com.feuersoft.imanager.persistence.Preferences</class>
+    <class>com.feuersoft.imanager.persistence.ProductLine</class>
+    <class>com.feuersoft.imanager.persistence.ProductVendor</class>
+    <class>com.feuersoft.imanager.persistence.PurchaseOrder</class>
+    <class>com.feuersoft.imanager.persistence.PurchaseOrderItem</class>
+    <class>com.feuersoft.imanager.persistence.Store</class>
+    <class>com.feuersoft.imanager.persistence.StoreQuantity</class>
+    <class>com.feuersoft.imanager.persistence.UnitMeasure</class>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <!--HSQL database settings-->
+      <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:hsql://127.0.0.1" />
+
+      <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/> 
+      <property name="hibernate.connection.username" value="sa"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.c3p0.acquire_increment" value="3"/>
+      <property name="hibernate.c3p0.min_size" value="2"/>
+      <property name="hibernate.c3p0.max_size" value="15"/>
+      <property name="hibernate.c3p0.timeout" value="3000"/>
+      <property name="hibernate.c3p0.max_statements" value="0"/>
+      <property name="hibernate.c3p0.idle_test_period" value="1500"/>
+      <property name="hibernate.connection.handling_mode" value="DELAYED_ACQUISITION_AND_HOLD"/>
+      <property name="hibernate.current_session_context_class" value="managed"/>
+      <property name="hibernate.jdbc.batch_size" value="0"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.cache.use_second_level_cache" value="false"/>
+      <property name="hibernate.connection.autocommit" value="false"/>
+      <property name="hibernate.ejb.naming_strategy" value="com.feuersoft.imanager.persistence.FixedDefaultComponentSafeNamingStrategy"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="imanager-MySQL" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>com.feuersoft.imanager.persistence.Associate</class>
+    <class>com.feuersoft.imanager.persistence.BinLocation</class>
+    <class>com.feuersoft.imanager.persistence.Company</class>
+    <class>com.feuersoft.imanager.persistence.Customer</class>
+    <class>com.feuersoft.imanager.persistence.InetProxy</class>
+    <class>com.feuersoft.imanager.persistence.Invoice</class>
+    <class>com.feuersoft.imanager.persistence.InvoiceNumber</class>
+    <class>com.feuersoft.imanager.persistence.Item</class>
+    <class>com.feuersoft.imanager.persistence.ItemLotNumber</class>
+    <class>com.feuersoft.imanager.persistence.ItemMetadata</class>
+    <class>com.feuersoft.imanager.persistence.ItemSerialNumber</class>
+    <class>com.feuersoft.imanager.persistence.MarketSegment</class>
+    <class>com.feuersoft.imanager.persistence.Preferences</class>
+    <class>com.feuersoft.imanager.persistence.ProductLine</class>
+    <class>com.feuersoft.imanager.persistence.ProductVendor</class>
+    <class>com.feuersoft.imanager.persistence.PurchaseOrder</class>
+    <class>com.feuersoft.imanager.persistence.PurchaseOrderItem</class>
+    <class>com.feuersoft.imanager.persistence.Store</class>
+    <class>com.feuersoft.imanager.persistence.StoreQuantity</class>
+    <class>com.feuersoft.imanager.persistence.UnitMeasure</class>
+	<shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <!--MySQL database settings-->
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/imanager"/>
+	  
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+      <property name="hibernate.connection.username" value="imanager"/>
+      <property name="hibernate.connection.password" value="test123"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.c3p0.acquire_increment" value="3"/>
+      <property name="hibernate.c3p0.min_size" value="2"/>
+      <property name="hibernate.c3p0.max_size" value="15"/>
+      <property name="hibernate.c3p0.timeout" value="3000"/>
+      <property name="hibernate.c3p0.max_statements" value="0"/>
+      <property name="hibernate.c3p0.idle_test_period" value="1500"/>
+      <property name="hibernate.connection.handling_mode" value="DELAYED_ACQUISITION_AND_HOLD"/>
+	  <property name="hibernate.current_session_context_class" value="managed"/>
+      <property name="hibernate.max_fetch_depth" value="0"/>
+      <property name="hibernate.jdbc.batch_size" value="0"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.cache.use_second_level_cache" value="false"/>
+      <property name="hibernate.connection.autocommit" value="false"/>
+      <property name="hibernate.ejb.naming_strategy" value="com.feuersoft.imanager.persistence.FixedDefaultComponentSafeNamingStrategy"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="imanager-PostgreSQL" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <class>com.feuersoft.imanager.persistence.Associate</class>
+    <class>com.feuersoft.imanager.persistence.BinLocation</class>
+    <class>com.feuersoft.imanager.persistence.Company</class>
+    <class>com.feuersoft.imanager.persistence.Customer</class>
+    <class>com.feuersoft.imanager.persistence.InetProxy</class>
+    <class>com.feuersoft.imanager.persistence.Invoice</class>
+    <class>com.feuersoft.imanager.persistence.InvoiceNumber</class>
+    <class>com.feuersoft.imanager.persistence.Item</class>
+    <class>com.feuersoft.imanager.persistence.ItemLotNumber</class>
+    <class>com.feuersoft.imanager.persistence.ItemMetadata</class>
+    <class>com.feuersoft.imanager.persistence.ItemSerialNumber</class>
+    <class>com.feuersoft.imanager.persistence.MarketSegment</class>
+    <class>com.feuersoft.imanager.persistence.Preferences</class>    
+    <class>com.feuersoft.imanager.persistence.ProductLine</class>
+    <class>com.feuersoft.imanager.persistence.ProductVendor</class>
+    <class>com.feuersoft.imanager.persistence.PurchaseOrder</class>
+    <class>com.feuersoft.imanager.persistence.PurchaseOrderItem</class>
+    <class>com.feuersoft.imanager.persistence.Store</class>
+    <class>com.feuersoft.imanager.persistence.StoreQuantity</class>
+    <class>com.feuersoft.imanager.persistence.UnitMeasure</class>
+	<shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <!-- PostgreSQL database settings-->
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/imanager"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+      <property name="hibernate.connection.username" value="imanager"/>
+      <property name="hibernate.connection.password" value="test123"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.c3p0.acquire_increment" value="3"/>
+      <property name="hibernate.c3p0.min_size" value="2"/>
+      <property name="hibernate.c3p0.max_size" value="15"/>
+      <property name="hibernate.c3p0.timeout" value="3000"/>
+      <property name="hibernate.c3p0.max_statements" value="0"/>
+      <property name="hibernate.c3p0.idle_test_period" value="1500"/>
+      <property name="hibernate.connection.handling_mode" value="DELAYED_ACQUISITION_AND_HOLD"/>
+      <property name="hibernate.current_session_context_class" value="managed"/>
+      <property name="hibernate.max_fetch_depth" value="0"/>
+      <property name="hibernate.jdbc.batch_size" value="0"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.cache.use_second_level_cache" value="false"/>
+      <property name="hibernate.connection.autocommit" value="false"/>
+      <property name="hibernate.ejb.naming_strategy" value="com.feuersoft.imanager.persistence.FixedDefaultComponentSafeNamingStrategy"/>
+    </properties>
+  </persistence-unit>
+</persistence>

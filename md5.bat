@@ -1,0 +1,1 @@
+fciv -md5 ..\iManagerRun.zip > ../md5.txt

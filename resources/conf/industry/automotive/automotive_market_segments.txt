@@ -1,0 +1,41 @@
+Under hood parts
+Chassis Parts
+Body Panels
+Tires & Rubber
+
+Wikipedia: https://en.wikipedia.org/wiki/List_of_auto_parts
+----------------------------------------
+1	Car Body and main part
+	Doors
+		Windows
+			Electrical and electronics
+			Audio/video devices
+			Cameras
+			Electrical supply system
+			Gauges and meters
+			Ignition electronic system
+			Lighting and signaling system
+			Sensors
+			Starting system
+			Electrical Switches
+			Wiring harnesses
+			Miscellaneous
+3	Interior
+	Floor components and parts
+	Other components
+	Car seat
+4	Power-train and chassis
+	Braking system
+	Engine components and parts
+	Engine cooling system
+	Engine oil system
+	Exhaust system
+	Fuel supply system
+	Suspension and steering systems
+	Transmission system
+5	Miscellaneous auto parts
+	Air conditioning system (A/C)
+	Bearings
+	Hose
+	Other miscellaneous parts
+

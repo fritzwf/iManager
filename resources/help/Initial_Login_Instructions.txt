@@ -1,0 +1,33 @@
+The first time you run iManager, it creates a default login.
+
+There are three groups of users, administrator, manager, and sales.
+Each one of these groups have different privledges.
+
+The example login credentials are:
+
+Administrator Associate
+------------------------------------
+Login name: admin
+Password: admin
+
+Manager Associate
+------------------------------------
+Login name: manager
+Password: manager
+
+Sales Associate
+------------------------------------
+Login name: sales
+Password: sales
+
+After you hve logged into iManager, you should change the admin password.
+To change the admin password, follow these steps:
+
+1) Click on the "Admin" menu
+2) Select the "Associate" menu item
+3) Click "Edit Associate" option
+4) Select the "admin" associate
+5) Click "OK" button
+6) Enter a new password in the "Password" field and the "Confirm Password" field.
+7) Click "OK" button
+

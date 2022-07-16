@@ -1,0 +1,47 @@
+<included>
+
+  <appender name="STDOUT"
+            class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <pattern>%d{HH:mm:ss.SSS} %-5level [%-20logger{20}] [%marker] %msg%n
+      </pattern>
+    </layout>
+  </appender>
+
+  <appender name="FILE"
+            class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+    <file>./log/${logback.appender.file.name}.log</file>
+
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <fileNamePattern>./log/${logback.appender.file.name}.%i.log</fileNamePattern>
+      <minIndex>1</minIndex>
+      <maxIndex>9</maxIndex>
+    </rollingPolicy>
+
+    <triggeringPolicy
+      class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <maxFileSize>100MB</maxFileSize>
+    </triggeringPolicy>
+
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <pattern>%d{HH:mm:ss.SSS} %-5level [%-20logger{20}] [%marker] %msg%n
+      </pattern>
+    </layout>
+  </appender>
+  
+  <logger name="org.hibernate">
+    <level value="WARN"/>
+  </logger>
+  
+  <logger name="com.feuersoft">
+    <level value="DEBUG"/>
+  </logger>  
+
+  <root>
+    <level value="INFO"/>
+    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
+  </root>
+
+</included>

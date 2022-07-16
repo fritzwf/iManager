@@ -1,0 +1,11 @@
+*.class
+*.jar
+*.exe
+*.log
+*.ppt
+*.doc
+*.bmp
+*.zip
+*\build\*
+*\dist\*
+
